@@ -1,0 +1,78 @@
+/* Global
+----------------------------- */
+*, 
+*:after, 
+*:before {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0
+}
+
+html {
+   color: #404040;
+   height: 100%;
+   font: 400 1em/1.5 'Open Sans', sans-serif;
+}
+
+.site {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.site__content {
+   flex: 1 0 auto;
+   padding: 1.5em 1em 1.5em;
+   width: 100%;
+}
+
+/* Typography
+----------------------------- */
+h1 {
+   margin-bottom: 1rem;
+}
+
+h2 {
+   margin-bottom: 0.75rem;
+}
+
+.u--text-center {
+   text-align: center;
+}
+
+/* Cells
+----------------------------- */
+.grid__demo {
+   width: 100%;
+   padding-top: 0.6em;
+   padding-bottom: 0.6em;
+   background: rgb(201, 201, 201);
+   border-radius: 3px;
+}
+
+/* Basic Grid Styles
+----------------------------- */
+
+.grid {
+   display: flex;
+}
+
+.grid__cell {
+   flex: 1;
+}
+
+/* Grid Style Modifiers
+----------------------------- */
+/* With gutters */
+.grid--gutters {
+   margin: -1em 0 0 -1em
+}
+
+.grid--gutters > .grid__cell {
+   padding: 1em 0 0 1em;
+   margin-bottom: 1em;
+}
+
